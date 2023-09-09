@@ -6,20 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Alle geraden Zahlen</h1>
-    <span id="evenNumbers"></span>
+    <h1>Alle geraden Zahlen von 0 bis <span id="maxNumber"></span></h1>
+    <span id="evenNumbers">evenNumbers</span>
 
 <script>
-    let initNumber = 0;
+    let number = 0;
+    let maxNumber = 1000;
     let evenNumbers = [];
 
-    if ((initNumbers / 2) = true) {
-        users.push [initNumber]
+    while (number <= maxNumber) {
+        if ((number % 2) == 0) {
+            evenNumbers.push (number);
+        }
+        number = number + 1;
     }
 
+    let evenNumberList = evenNumbers.join(", ")
 
-    let evenNumbers = "Numbers";
-    document.getElementById("evenNumbers").innerHTML = initNumber;
+    document.getElementById("evenNumbers").innerHTML = evenNumbers;
+    document.getElementById("maxNumber").innerHTML = maxNumber;
 </script>
 </body>
 </html>
